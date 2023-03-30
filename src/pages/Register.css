@@ -1,0 +1,130 @@
+:root, [data-theme="default"] {
+    --body-bg-color: #fff;
+    --border-button: 1px solid rgb(198, 196, 196);
+}
+
+[data-theme="dark"] {
+    --body-bg-color: #444352;
+    --border-button: 1px solid rgb(198, 196, 196)
+  }
+  
+
+.nav-main{
+    background-color: var(--body-bg-color);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 90vh;
+}
+
+.reg-img-form{
+    margin-top: 25px;
+}
+
+.nav-info{
+    background-color: #EEEEEE;
+    margin-top: 3px;
+    padding: 10px;
+    width: 340px;
+    height: 490px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.divBtn{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.divBtn button{
+    height: 27px;
+    width: 220px;
+    border: var(--border-button);
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.or{
+    font-size: 15px;
+}
+
+.input{
+    height: 27px;
+    width: 220px;
+    border: var(--border-button);
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 13px;
+    text-align: center;
+    outline: none;
+}
+
+.continue{
+    margin-top:-23px;
+    height: 32px;
+    width: 220px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    background-color: E8D5C4;
+    color: white;
+    text-align: center;
+}
+
+.noAccount{
+    font-size: 13px;
+}
+
+.create{
+    font-size: 14px;
+    color: #3A98B9;
+    text-decoration: underline;
+}
+
+.FcGog{
+    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.exclaim{
+    color: red;
+    margin-top: 3px;
+    font-size: 11px;
+    padding: 4px;
+    display: none;
+}
+
+.exclaims{
+    color: red;
+    margin-top: 3px;
+    font-size: 11px;
+    padding: 4px;
+    display: none;
+}
+
+input:invalid[passwordFocused='true']{
+    border: 1px solid red;
+}
+
+input:invalid[passwordFocused='true'] ~ .exclaims{
+    display: block;
+}
+
+input:invalid[CPasswordFocused='true'] ~ .exclaim{
+    display: block;
+}
+
+
+.cp{
+    margin-top: 2px;
+    height: 27px;
+    width: 220px;
+    border: var(--border-button);
+    border-radius: 5px;
+    font-size: 13px;
+    text-align: center;
+}
